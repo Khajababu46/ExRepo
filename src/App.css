@@ -1,0 +1,133 @@
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-header {
+  animation: header-fade-in 1.2s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes header-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f7f8fa;
+  color: #222;
+  margin: 0;
+}
+
+.portfolio-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.portfolio-header {
+  background: #22223b;
+  color: #fff;
+  padding: 32px 24px 16px 24px;
+  text-align: center;
+}
+.portfolio-header h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.portfolio-header nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.portfolio-header nav a {
+  color: #c9ada7;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.portfolio-header nav a:hover {
+  color: #f2e9e4;
+}
+
+main {
+  padding: 32px 24px;
+}
+
+.section {
+  margin-bottom: 48px;
+  text-align: left;
+}
+.section:last-child {
+  margin-bottom: 0;
+}
+.section h2 {
+  color: #22223b;
+  margin-bottom: 12px;
+  font-size: 2rem;
+  border-left: 4px solid #9a8c98;
+  padding-left: 12px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skills-list li {
+  background: #c9ada7;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.project-card {
+  background: #f2e9e4;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.project-card h3 {
+  margin-top: 0;
+  color: #4a4e69;
+}
+
+.contact-section a {
+  color: #4a4e69;
+  text-decoration: underline;
+}
+
+.portfolio-footer {
+  background: #22223b;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
